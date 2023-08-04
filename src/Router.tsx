@@ -4,7 +4,8 @@ import Coin from "./routes/Coin";
 import Chart from "./routes/Chart";
 import Price from "./routes/Price";
 
-const Router = () => {
+interface IRouterProps {}
+const Router = ({}: IRouterProps) => {
   return (
     <BrowserRouter>
       <Routes>

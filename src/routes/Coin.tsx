@@ -129,7 +129,9 @@ interface PriceData {
     };
   };
 }
-function Coin() {
+
+interface ICoinProps {}
+function Coin({}: ICoinProps) {
   const { coinId } = useParams(); // useParams쓰는 순간 타입이 string or undefined로 된다
   const { state } = useLocation();
   const priceMatch = useMatch("/:coinId/price");
